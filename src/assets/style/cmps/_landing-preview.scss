@@ -1,0 +1,32 @@
+.landing-preview {
+    box-shadow: 0.3px 0.3px 1.5px black;
+    max-height: rem(360px);
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0.3px 0.4px 1.5px $clr-second-op;
+    }
+    .img-container {
+        width: 200px;
+        height: 200px;
+        align-self: center;
+        >img {
+            border-radius: 3px;
+            height: 100%;
+            width: 100%;
+            background-color: $clr-prime;
+        }
+    }
+    h2.preview-title {
+        font-weight: 700;
+        font-size: rem(18px);
+    }
+    >article {
+        padding: rem(5px);
+        >p {
+            font-size: rem(16px);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+}

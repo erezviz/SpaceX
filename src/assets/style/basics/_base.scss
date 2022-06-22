@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $clr-prime-op;
+    color: $clr-second;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    font-size: rem(18px);
+    margin: 0;
+    background-color: $clr-bcg-main;
+    margin: auto;
+}
+
+.main-container {
+    padding: rem(25px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
