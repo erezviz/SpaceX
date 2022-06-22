@@ -25,6 +25,6 @@ async function query(filterBy = null) {
 }
 
 async function getById(id) {
-    const landing = await storageService.get(KEY, id)
-    console.log('landing in getbyid', landing);
+    const landings = await query()
+    return landings.find(landing => landing.id === id)
 }
