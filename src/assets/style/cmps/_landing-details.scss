@@ -1,0 +1,24 @@
+.landing-details {
+    align-items: center;
+    min-height: 80vh;
+    background-position: center;
+    background-color: #0458881b;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hue;
+    color: $clr-bcg-main;
+    text-shadow: 0 0.5px 0.5px black;
+    .summary {
+        >p {
+            width: 40ch;
+        }
+    }
+    .wiki-link {
+        text-decoration: underline;
+        &:hover {
+            color: $clr-prime;
+            cursor: pointer;
+        }
+    }
+}
