@@ -1,6 +1,6 @@
 
 
-import '../src/assets/style/styles.scss'
+
 import { AppHeader } from './cmps/app-header';
 import { SpaceApp } from './pages/space-app';
 import {Routes, Route} from 'react-router-dom'
