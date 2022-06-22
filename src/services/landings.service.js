@@ -4,7 +4,8 @@ const API_URL = 'https://api.spacexdata.com/v4/launches'
 const KEY = 'landingsDB'
 
 export const landingService = {
-    query
+    query,
+    getById
 }
 
 async function query(filterBy = null) {
@@ -21,4 +22,9 @@ async function query(filterBy = null) {
         }
     }
     return landings
+}
+
+async function getById(id) {
+    const landing = await storageService.get(KEY, id)
+    console.log('landing in getbyid', landing);
 }
